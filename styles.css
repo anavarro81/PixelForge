@@ -53,7 +53,8 @@ img {
   object-fit: cover;
 }
 
-a:visited {
+a:visited,
+.cta-button:visited {
   color: var(--color-secondary);
 }
 
@@ -69,6 +70,35 @@ nav {
   background: #0f0f0f;
 }
 
+hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 8rem);
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
+
+hero h1 {
+  font-size: clamp(4rem, 5vw, 6rem);
+  line-height: 1.05;
+  max-width: 70rem;
+}
+
+hero h3 {
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  color: #d8d8d8;
+  max-width: 60rem;
+  font-weight: 400;
+}
+
+hero p {
+  font-size: 1.8rem;
+  max-width: 55rem;
+  color: #bfc4ca;
+}
+
 /* Desktop: el botón hamburguesa no existe */
 .hamburger {
   display: none;
@@ -77,6 +107,21 @@ nav {
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1.2rem 2rem;
+  background: var(--color-primary);
+  color: #0c131b;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 0.8rem;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
 }
 
 /* Desktop: el menú es una fila horizontal */
@@ -159,11 +204,41 @@ section {
 
 /* Bellow 700px  Small tablets */
 @media (max-width: 44em) {
+  hero {
+    padding: 3rem 1.5rem;
+  }
+
+  hero h1 {
+    font-size: 4.2rem;
+  }
+
+  hero h3 {
+    font-size: 2rem;
+  }
 }
 
 /* Bellow 544px  phones */
 @media (max-width: 34em) {
   .hamburger {
     display: block;
+  }
+
+  hero {
+    min-height: auto;
+    padding: 2.5rem 1.5rem;
+  }
+
+  hero h1 {
+    font-size: 3.2rem;
+  }
+
+  hero p {
+    font-size: 1.6rem;
+  }
+
+  .cta-button {
+    width: 60%;
+    text-align: center;
+    margin: 2rem auto 0;
   }
 }
