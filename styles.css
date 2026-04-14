@@ -16,9 +16,10 @@
 ----------------------------------------------- */
 
 :root {
-  --color-primary: #ffd60a;
-  --color-secondary: #000814;
-  --font-main: "Montserrat", sans-serif;
+  --color-primary: #00A9FA;
+  --color-secondary: #CED2D5;
+  --color-background: #0C131B;
+  --font-main: "Oswald", sans-serif;
   --max-width: 240rem;
   --content-witdh: 192rem;
 }
@@ -35,6 +36,9 @@
 
 body {
   font-family: var(--font-main);
+  font-size: 1.6rem;
+  background-color: var(--color-background);
+  color: var(--color-secondary);
 }
 
 html {
@@ -48,6 +52,59 @@ img {
   object-fit: cover;
 }
 
+a:visited {
+  color: var(--color-secondary);
+}
+
+/* -----------------------------------------------
+   03. Layout global
+----------------------------------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0f0f0f;
+}
+
+/* Desktop: el botón hamburguesa no existe */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Desktop: el menú es una fila horizontal */
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* Móvil: el menú está oculto por defecto */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #0f0f0f;
+    padding: 1rem 2rem;
+  }
+
+  /* Cuando JS añade esta clase, el menú aparece */
+  .menu.abierto {
+    display: flex;
+  }
+
+
+
+
 
 /* -----------------------------------------------
    09. Media Querys
@@ -56,21 +113,20 @@ img {
 
 
 /* smaller destoks */
-@media (max-width: 82em) {
-}
+@media (max-width: 82em) {}
 
 /* Bellow 1200px Land Scape tablets */
-@media (max-width: 75em) {
-}
+@media (max-width: 75em) {}
 
 /* Bellow 944px  tablets */
-@media (max-width: 59em) {
-}
+@media (max-width: 59em) {}
 
 /* Bellow 700px  Small tablets */
-@media (max-width: 44em) {
-}
+@media (max-width: 44em) {}
 
 /* Bellow 544px  phones */
 @media (max-width: 34em) {
+  .hamburger {
+    display: block;
+  }
 }
