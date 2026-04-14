@@ -1,46 +1,88 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelForce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PixelForce</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <img src="Logo.png" alt="" />
+        <div class="logo" href="#">
+          <span>Pixel</span>
+          <span>Forge</span> - Studios
+        </div>
 
-<body>
-  <header>
-    <nav>
-      <img src="Logo.png" alt="">
-      <a class="logo" href="#">PixelForge Studios</a>
+        <ul class="menu" id="menu">
+          <li><a href="#">Juegos</a></li>
+          <li><a href="#">Estudio</a></li>
+          <li><a href="#">Empleo</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <button class="hamburger" id="toggle">☰</button>
+      </nav>
 
-      <ul class="menu" id="menu">
-        <li><a href="#">Juegos</a></li>
-        <li><a href="#">Estudio</a></li>
-        <li><a href="#">Empleo</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-      <button class="hamburger" id="toggle">☰</button>
-    </nav>
+      <hero> </hero>
+    </header>
 
-    <hero>
+    <section id="catalogo" class="cardGame-container">
+      <article>
+        <img src="./assets/NeonRun.jpg" alt="NeonRun" class="cardGame-img" />
+        <h3 class="cardGame-title">NeonRun</h3>
+        <span class="cardGame-genre-badget">Plataformas / Acción</span>
 
-    </hero>
-  </header>
+        <p class="cardGame-genre-badget">
+          Una vista atmosférica y misteriosa del espacio profundo. Una nave de
+          exploración científica solitaria flota cerca de una colosal
+          megaestructura alienígena o un portal inactivo. La iluminación es fría
+          y técnica, dominada por azules profundos, verdes digitales y el
+          destello de energía sutil que emana del Protocolo. Transmite
+          inmensidad y misterio técnico
+        </p>
+      </article>
 
-  <section id="catalogo"></section>
+      <article>
+        <img src="./assets/AbyssalProtocol.jpg" alt="Abyssal Protocol" />
+        <h3>Abyssal Protocol</h3>
+        <span>RPG / Ciencia ficción</span>
+        <p>
+          Una vista atmosférica y misteriosa del espacio profundo. Una nave de
+          exploración científica solitaria flota cerca de una colosal
+          megaestructura alienígena o un portal inactivo. La iluminación es fría
+          y técnica, dominada por azules profundos, verdes digitales y el
+          destello de energía sutil que emana del Protocolo. Transmite
+          inmensidad y misterio técnico.
+        </p>
+      </article>
 
-  <section id="about"></section>
+      <article>
+        <img src="./assets/HollowFarm.png" alt="Hollow Farm" />
+        <h3>Hollow Farm</h3>
+        <span>Simulación / Pixel art</span>
+        na vista isométrica y detallada en pixel art. Una granja acogedora pero
+        solitaria se asienta bajo un cielo crepuscular de colores pastel. El
+        granero y los campos están rodeados por una valla de madera sutilmente
+        desgastada. Un pequeño personaje de píxeles cuida un huerto,
+        transmitiendo paz y una leve melancolía propia del título "Hollow"
+      </article>
+    </section>
 
-  <section id="empleo"></section>
+    <section id="about"></section>
 
-  <footer></footer>
+    <section id="empleo"></section>
 
-  <script src="script.js"></script>
+    <footer></footer>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
