@@ -1,0 +1,76 @@
+/* ---------------------------------------------------
+   INDEX
+   01. Variables
+   02. Reset / Base
+   03. Layout global
+   04. Header and Navigation
+   05. Catalogo
+   06. About
+   07. Empleo
+   08. Footer
+   09. Media Querys
+-----------------------------------------------------*/
+
+/* -----------------------------------------------
+   01. Variables
+----------------------------------------------- */
+
+:root {
+  --color-primary: #ffd60a;
+  --color-secondary: #000814;
+  --font-main: "Montserrat", sans-serif;
+  --max-width: 240rem;
+  --content-witdh: 192rem;
+}
+
+/* -----------------------------------------------
+   02. Reset / Base
+----------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+html {
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* -----------------------------------------------
+   09. Media Querys
+----------------------------------------------- */
+
+
+
+/* smaller destoks */
+@media (max-width: 82em) {
+}
+
+/* Bellow 1200px Land Scape tablets */
+@media (max-width: 75em) {
+}
+
+/* Bellow 944px  tablets */
+@media (max-width: 59em) {
+}
+
+/* Bellow 700px  Small tablets */
+@media (max-width: 44em) {
+}
+
+/* Bellow 544px  phones */
+@media (max-width: 34em) {
+}
