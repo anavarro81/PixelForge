@@ -147,14 +147,39 @@ hero p {
   display: flex;
 }
 
+/* -----------------------------------------------
+   06. About
+----------------------------------------------- */
+.primario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 8rem);
+  padding: 4rem 2rem;
+  gap: 2rem;
+}
 
+#about {
+  padding: 4rem 2rem;
+}
 
+.destacados {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: var(--color-primary);
+  padding: 1.2rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  flex-direction: column;
 
+}
 
 /* -----------------------------------------------
    09. Media Querys
 ----------------------------------------------- */
-
 
 
 /* smaller destoks */
