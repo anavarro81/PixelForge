@@ -168,8 +168,9 @@ hero p {
 ----------------------------------------------- */
 
 section {
-  max-width: var(--content-witdh);
+  max-width: var(--content-width);
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
 .cardGame-container {
